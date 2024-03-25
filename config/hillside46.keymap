@@ -2,5 +2,5 @@
 // https://github.com/manna-harbour/miryoku
 
 #include "../miryoku/custom_config.h"
-#include "../miryoku/mapping/48/hillside46.h"
+#include "../miryoku/mapping/46/hillside46.h"
 #include "../miryoku/miryoku.dtsi"
