@@ -1,0 +1,6 @@
+# I have no idea what I'm doing here
+
+outboard_repository=ctranstrum/lintilla
+outboard_ref=zmk
+outboard_from=boards/shields/lintilla
+outboard_to=boards/shields/lintilla
