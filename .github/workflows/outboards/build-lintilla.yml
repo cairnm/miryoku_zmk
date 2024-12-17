@@ -1,0 +1,16 @@
+# Copyright 2023 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Example Lintilla'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '[
+        "lintilla_left_central","lintilla_left_peripheral",
+        "lintilla_right_peripheral","lintilla_dongle"
+      ]'
+      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+      branches: '["zmkfirmware/zmk/main ctranstrum/lintilla/zmk"]'
