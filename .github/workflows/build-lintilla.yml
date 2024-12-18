@@ -11,5 +11,5 @@ jobs:
       board: '["seeeduino_xiao_ble"]'
       shield: '["lintilla_left_central rgbled-adapter","lintilla_right_peripheral rgbled_adapter"]'
       custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
-      branches: '["zmkfirmware/zmk/main caksoylar/zmk-rgbled-widget/main"]'
+      branches: '["zmkfirmware/zmk/main"]'
       modules: '["ctranstrum/lintilla/zmk caksoylar/zmk-rgbled-widget/main"]'
