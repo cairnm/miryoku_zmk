@@ -8,9 +8,8 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '[
-        "lintilla_left_central","lintilla_left_peripheral",
-        "lintilla_right_peripheral","lintilla_dongle"
-      ]'
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["lintilla_left_central rgbled-adapter","lintilla_right_peripheral rgbled_adapter"]'
       custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
-      branches: '["zmkfirmware/zmk/main ctranstrum/lintilla/zmk"]'
+      branches: '["zmkfirmware/zmk/main ctranstrum/lintilla/zmk caksoylar/zmk-rgbled-widget/main"]'
+      modules: '["caksoylar/zmk-rgbled-widget/main"]'
