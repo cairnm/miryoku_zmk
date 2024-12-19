@@ -9,7 +9,7 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["desolation rgbled_adapter"]'
+      shield: '["desolation"]'
       custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
       branches: '["zmkfirmware/zmk/main"]'
-      modules: '["miketronic/zmk-keyboards-desolation/main caksoylar/zmk-rgbled-widget/main"]'
+      modules: '["miketronic/zmk-keyboards-desolation/main"]'
