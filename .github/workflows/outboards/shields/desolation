@@ -1,0 +1,6 @@
+# I have no idea what I'm doing here
+
+outboard_repository=miketronic/zmk-keyboards-desolation
+outboard_ref=main
+outboard_from=boards/shields/desolation
+outboard_to=boards/shields/desolation
