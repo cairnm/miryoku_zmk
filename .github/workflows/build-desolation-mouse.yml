@@ -9,7 +9,7 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["desolation"]'
+      shield: '["desolation","settings_reset"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR","#define MIRYOKU_ALPHAS_QWERTY"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
       branches: '["zmkfirmware/zmk/main "]'
