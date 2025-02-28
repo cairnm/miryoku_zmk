@@ -1,7 +1,7 @@
 # Copyright 2024 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Desolation mousekeyspr'
+name: 'Build Desolation with Pointer'
 on: workflow_dispatch
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["desolation","settings_reset"]'
-      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR","#define MIRYOKU_ALPHAS_QWERTY"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
       branches: '["zmkfirmware/zmk/main "]'
       modules: '["miketronic/zmk-keyboards-desolation/main"]'
