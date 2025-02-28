@@ -10,7 +10,7 @@ jobs:
     with:
       board: '["seeeduino_xiao_ble"]'
       shield: '["lintilla_dongle","lintilla_left_peripheral rgbled_adapter","lintilla_left_central rgbled_adapter","lintilla_right_peripheral rgbled_adapter","settings_reset"]'
-      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY","#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
       branches: '["zmkfirmware/zmk/main"]'
-      modules: '["petejohanson/zmk/feat/pointers-move-scroll","zmkfirmware/zmk/main petejohanson/zmk/feat/pointers-move-scroll","ctranstrum/lintilla/zmk caksoylar/zmk-rgbled-widget/main"]'
+      modules: '["ctranstrum/lintilla/zmk caksoylar/zmk-rgbled-widget/main"]'
