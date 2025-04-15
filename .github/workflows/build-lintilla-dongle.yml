@@ -8,7 +8,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["raytac_mdbt50q_db_40"]'
+      board: '["nice_nano_v2"]'
       shield: '["lintilla_dongle","settings_reset"]'
       custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
       kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
