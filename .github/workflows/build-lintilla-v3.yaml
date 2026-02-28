@@ -1,0 +1,16 @@
+# Copyright 2023 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Lintilla v0.3'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["lintilla_dongle","lintilla_dongle prospector_adapter","lintilla_left_peripheral rgbled_adapter","lintilla_left_central rgbled_adapter","lintilla_right_peripheral rgbled_adapter","settings_reset"]'
+      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
+      branches: '["zmkfirmware/zmk/v0.3-branch"]'
+      modules: '["ctranstrum/lintilla/zmk caksoylar/zmk-rgbled-widget/v0.3-branch carrefinho/prospector-zmk-module/main"]'
