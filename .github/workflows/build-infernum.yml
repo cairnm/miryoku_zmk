@@ -1,0 +1,16 @@
+# Copyright 2024 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Infernum with Pointer'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["sparkfun_pro_micro_rp2040"]'
+      shield: '["infernum","settings_reset"]'
+      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
+      branches: '["zmkfirmware/zmk/v0.3-branch"]'
+      modules: '["cairnm/zmk-keyboards-infernum/main"]'
