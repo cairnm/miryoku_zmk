@@ -8,8 +8,8 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["sparkfun_pro_micro_rp2040"]'
-      shield: '["infernum","settings_reset"]'
+      board: '["rpi_pico"]'
+      shield: '["infernum"]'
       custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
       kconfig: '["CONFIG_ZMK_POINTING=y"]'
       branches: '["zmkfirmware/zmk/v0.3-branch"]'
