@@ -1,0 +1,5 @@
+
+outboard_repository=cairnm/zmk-keyboards-infernum
+outboard_ref=main
+outboard_from=boards/shields/infernum
+outboard_to=boards/shields/infernum
